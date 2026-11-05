@@ -1,4 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-
+    <item android:id="@+id/pop_guardar"
+        android:title="@string/emergente_guardar" />
+    <item android:id="@+id/pop_copiar"
+        android:title="@string/emergente_copiar" />
+    <item android:id="@+id/pop_borrar"
+        android:title="@string/emergente_borrar" />
 </menu>

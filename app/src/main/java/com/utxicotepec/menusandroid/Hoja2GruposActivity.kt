@@ -1,6 +1,8 @@
 package com.utxicotepec.menusandroid
 
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuItem
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -26,9 +28,31 @@ class Hoja2GruposActivity : AppCompatActivity() {
         setSupportActionBar(findViewById<MaterialToolbar>(R.id.toolbar))
 
         txtResultado = findViewById(R.id.txtResultado)
-
-        // ZONA A: aquí van las instrucciones del tutorial que van dentro de onCreate
     }
 
-    // ZONA B: aquí van las funciones del tutorial que van FUERA de onCreate
+    // ZONA B
+    override fun onCreateOptionsMenu(menu: Menu): Boolean {
+        menuInflater.inflate(R.menu.menu_hoja2, menu)
+        return true
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        return when (item.itemId) {
+            // Grupo "single": al marcar una, Android desmarca las demás solo
+            R.id.dif_facil, R.id.dif_medio, R.id.dif_dificil -> {
+                item.isChecked = true
+                txtResultado.text = getString(R.string.resultado_formato, item.title)
+                true
+            }
+            // Elemento activable independiente: hay que invertirlo a mano
+            R.id.opt_sonido -> {
+                item.isChecked = !item.isChecked
+                txtResultado.text = getString(
+                    if (item.isChecked) R.string.sonido_activado else R.string.sonido_desactivado
+                )
+                true
+            }
+            else -> super.onOptionsItemSelected(item)
+        }
+    }
 }

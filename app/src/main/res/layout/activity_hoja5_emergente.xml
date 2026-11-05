@@ -11,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
         android:background="?attr/colorPrimary"
-        app:title="Hoja 5 - Menu emergente"
+        app:title="Hoja 5 - Menú emergente"
         app:titleTextColor="@android:color/white" />
 
     <TextView
@@ -22,4 +22,10 @@
         android:textSize="18sp"
         android:text="Aquí va a aparecer la opción que elijas" />
 
+    <Button
+        android:id="@+id/btnMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/btn_abrir_menu" />
 </LinearLayout>

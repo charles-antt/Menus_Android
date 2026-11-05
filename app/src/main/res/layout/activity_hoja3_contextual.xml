@@ -11,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
         android:background="?attr/colorPrimary"
-        app:title="Hoja 3 - Menu Contextual"
+        app:title="Hoja 3 - Menú contextual"
         app:titleTextColor="@android:color/white" />
 
     <TextView
@@ -21,5 +21,15 @@
         android:padding="24dp"
         android:textSize="18sp"
         android:text="Aquí va a aparecer la opción que elijas" />
+
+    <TextView
+        android:id="@+id/txtElemento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:padding="24dp"
+        android:background="#E0E0E0"
+        android:textSize="18sp"
+        android:text="Selecciona un acción" />
 
 </LinearLayout>

@@ -1,3 +1,25 @@
 <resources>
     <string name="app_name">Menus Android</string>
+    <!-- Hoja 2 -->
+    <string name="dificultad_facil">Fácil</string>
+    <string name="dificultad_medio">Medio</string>
+    <string name="dificultad_dificil">Difícil</string>
+    <string name="sonido">Sonido</string>
+    <string name="sonido_activado">Sonido activado</string>
+    <string name="sonido_desactivado">Sonido desactivado</string>
+
+    <!--Hoja 3 y 4 -->
+    <string name="elemento_hint">Mantén presionado este elemento</string>
+    <string name="ctx_titulo">Opciones del elemento</string>
+    <string name="accion_titulo">Elemento seleccionado</string>
+    <string name="resultado_formato">Seleccionaste: %1$s</string>
+    <string name="editar">Editar</string>
+    <string name="compartir">Compartir</string>
+    <string name="eliminar">Eliminar</string>
+
+    <!-- Hoja 5 -->
+    <string name="btn_abrir_menu">Abrir menú</string>
+    <string name="emergente_guardar">Guardar</string>
+    <string name="emergente_copiar">Copiar</string>
+    <string name="emergente_borrar">Borrar</string>
 </resources>
