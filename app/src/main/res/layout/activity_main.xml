@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Práctica de menús"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:paddingBottom="16dp" />
+
+    <Button
+        android:id="@+id/btnHoja1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hoja 1 - Menú de opciones" />
+
+    <Button
+        android:id="@+id/btnHoja2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hoja 2 - Grupos y activables" />
+
+    <Button
+        android:id="@+id/btnHoja3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hoja 3 - Menú contextual" />
+
+    <Button
+        android:id="@+id/btnHoja4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hoja 4 - Modo de acción" />
+
+    <Button
+        android:id="@+id/btnHoja5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hoja 5 - Menú emergente" />
+
+</LinearLayout>
